@@ -1,3 +1,10 @@
+html {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 body {
 	background-color: LightGray;
 }
@@ -12,26 +19,25 @@ div {
 	height: 70px;
 	margin: 0 auto;
 }
+.top-navigation .links > .active {
+	color: #4c5058;
+	font-weight: 500;
+}
 .logo {
-	margin-left: 180px;
 	height: 70px;
 }
-#KarmaLogo {
-	width: 1.25%;
-	height: auto;
-	position: absolute;
-	padding-left: 24em;
-	padding-top: .5em;
+.content {
+	padding: 0px 15px;
 }
-#menu-standard {
+.links {
 	float: right;
-	padding-right: 24em;
-	font-family: sans-serif;	
+	margin-top: 25px;
 }
-ul > li{
+.links > li {
 	display: inline-block;
-	position: relative;
-	padding-left: 2em;
-	padding-top: .5em;
-	font-size: 1em;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #838994;
+	letter-spacing: 0.03em;
+	margin-left: 15px;
 }
