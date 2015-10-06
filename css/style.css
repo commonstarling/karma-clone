@@ -12,6 +12,10 @@ div {
 	height: 70px;
 	margin: 0 auto;
 }
+.logo {
+	margin-left: 180px;
+	height: 70px;
+}
 #KarmaLogo {
 	width: 1.25%;
 	height: auto;
