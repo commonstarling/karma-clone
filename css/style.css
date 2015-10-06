@@ -4,3 +4,22 @@ body {
 div {
 	border: 1px solid Chocolate;
 }
+#KarmaLogo {
+	width: 1.25%;
+	height: auto;
+	position: absolute;
+	padding-left: 24em;
+	padding-top: .5em;
+}
+#menu-standard {
+	float: right;
+	padding-right: 24em;
+	font-family: sans-serif;	
+}
+ul > li{
+	display: inline-block;
+	position: relative;
+	padding-left: 2em;
+	padding-top: .5em;
+	font-size: 1em;
+}
