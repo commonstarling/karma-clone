@@ -47,5 +47,9 @@ div {
 	padding: 0px 15px;
 }
 .introduction {
-	background-image: /* placeholder */
+	background-image: url('../images/first-background.jpg');
+	background-position: 0 bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
 }
