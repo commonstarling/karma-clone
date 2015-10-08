@@ -16,7 +16,9 @@ body {
 	z-index: 9999;
 }
 .top-navigation > .content {
-	height: 4.375rem;
+	width: 970px;
+	height: 70px;
+	margin: 0 auto;
 }
 .top-navigation .logo {
 	height: 4.375rem;
@@ -49,6 +51,7 @@ body {
 }
 .introduction h1 {
 	margin-top: 17.5rem;
+	margin-bottom: -0.5rem;
 	font-size: 3.125rem;
 }
 .introduction h3 {
@@ -111,7 +114,9 @@ body {
 .cases .devices > li {
 	width: 33.3333333%
 	float: left;
-	padding: 2.75rem;
+	padding: 3.5rem;
+	margin-top: -3rem;
+	margin-left: -2rem;
 }
 .cases .devices h3 {
 	font-weight: 400;
@@ -127,17 +132,20 @@ body {
 	overflow: auto;
 	padding-bottom: 9.375rem;
 	text-align: center;
+	margin-top: -6rem;
 }
 .social hr {
 	border: 0;
 	border-top: 1px solid #eaebec;
 	margin: 1.313rem 0;
 }
+.social .icons {
+	width: 95%;
+}
 .social .icons > li {
-	border-radius: 1.25 rem;
+	border-radius: 1.25rem;
 	width: 2.5rem;
 	display: inline-block;
-	margin: 1.25rem 5px;
 	border: 1px solid #eaebec;
 	padding: 0.625rem 0;
 	text-align: center;
@@ -158,4 +166,8 @@ body {
 	font-size: 0.9rem;
 	font-weight: 300;
 	color: #838994
+}
+.social .content > h5 {
+	font-weight: 400;
+	font-size: 1rem;
 }
