@@ -1,10 +1,10 @@
 html {
 	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
 }
 body {
 	background-color: LightGray;
 	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 div {
 	border: 1px solid Chocolate;
@@ -12,42 +12,42 @@ div {
 /*Navigation Section */
 .top-navigation {
 	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid #DDD;
+	z-index: 9999;
 }
-.content {
-	width: 970px;
-	height: 70px;
-	margin: 0 auto;
-	padding: 0px 15px;
-	box-sizing: inherit;
+.top-navigation > .content {
+	height: 4.375rem;
+}
+.top-navigation .logo {
+	height: 4.375rem;
 }
 .top-navigation .links {
 	float: right;
 	color: #838994;
-	font-size: 16px;
-	margin-top: 25px;
-	-webkit-font-smoothing: antialiased;
+	font-size: 1.04rem;
+	margin-top: 1.7rem;
 }
 .top-navigation .links li {
 	display: inline-block;
-	margin-left: 25px;
+	margin-left: 1.563rem;
 }
-.top-navigation .links > .active {
+.top-navigation .links > li.active {
 	color: #4c5058;
 	font-weight: 500;
 }
-.top-navigation .lins li:hover {
+.top-navigation .links li:hover {
 	cursor: pointer;
 	color: #333333;
 }
-.logo {
-	height: 70px;
-}
 .introduction {
 	background-image: url('../images/first-background.jpg');
-	background-position: 0 bottom;
+	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 600px;
+	height: 45.938rem;
+	overflow: auto;
 }
 .introduction h1 {
 	margin-top: 17.5rem;
@@ -62,14 +62,16 @@ div {
 	text-align: center;
 	font-weight: 300;
 }
+.introduction .buttons {
+	color: white;
+	text-align: center;
+	margin-top: 1.563rem;
+}
 .big-button {
 	text-shadow: none;
 	border-style: none;
 	border-radius: 4px;
-	padding: 16px 26px;
-	line-height: 1.33;
-	display: block;
-	margin: 0 auto;
+	padding: 1rem 1.5rem;
 	width: 9.688rem;
 	background-color: #f15a29;
 	border-color: #f15a29;
@@ -86,15 +88,38 @@ div {
 	overflow: hidden;
 	padding-bottom: 5rem;
 }
-.cases .devices > li {
+.cases .devices > ul {
 	width: 33.3333333%
 	display: inline-block;
-	/* styles to assis with debgging */
+	/* styles to assist with debgging */
 	border: 1px solid black;
 	box-sizing: border-box;
 	height: 4em;
 }
+.cases .devices > li {
+	display: inline-block;
+}
 .cases .content {
+	margin-top: 7.785rem;
+	padding: none;
 	color: #1d1e21;
 	text-align: center;
+}
+.cases h2 {
+	font-size: 2.75rem;
+	margin: 1.625rem 0 3.125rem;
+	font-weight: 300;
+}
+.cases .devices > li {
+	width: 33.3333333%
+	float: left;
+}
+.cases .devices h3 {
+	font-weight: 400;
+	font-size: 1.563rem;
+	margin: 2.5rem 0px 1.875rem;
+}
+.cases .devices p {
+	font-weight: 300;
+	font-size: 1.313rem;
 }
