@@ -89,20 +89,18 @@ body {
 	overflow: hidden;
 	padding-bottom: 5rem;
 }
-.cases .devices > ul {
-	width: 33.3333333%
-	display: inline-block;
-	/* styles to assist with debgging */
-	border: 1px solid black;
+.cases .devices {	
+	/* styles to assist with debugging */
 	box-sizing: border-box;
-	height: 4em;
+	height: auto;
 }
-.cases .devices > li {
+.cases .devices li {
 	display: inline-block;
+	width: 33%
 }
 .cases .content {
 	margin-top: 7.785rem;
-	padding: none;
+	padding: 0;
 	color: #1d1e21;
 	text-align: center;
 }
@@ -112,11 +110,8 @@ body {
 	font-weight: 300;
 }
 .cases .devices > li {
-	width: 33.3333333%
+	width: 33%;
 	float: left;
-	padding: 3.5rem;
-	margin-top: -3rem;
-	margin-left: -2rem;
 }
 .cases .devices h3 {
 	font-weight: 400;
