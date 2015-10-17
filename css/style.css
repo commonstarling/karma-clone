@@ -1,3 +1,19 @@
+/* CSS reset 
+	(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+
+/* General styles 
+	(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
 html {
 	box-sizing: border-box;
 }
@@ -7,7 +23,9 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-/*Navigation Section */
+/* Header styles 
+	(all the styles inside the < header > or < nav > tags) 
+*/
 .top-navigation {
 	background-color: #fff;
 	position: fixed;
@@ -20,20 +38,23 @@ body {
 	height: 70px;
 	margin: 0 auto;
 }
-.top-navigation .logo {
-	height: 4.375rem;
-}
-.top-navigation .links {
+
+.top-navigation .content .links {
 	float: right;
 	color: #838994;
 	font-size: 1.04rem;
 	margin-top: 1.7rem;
 }
+
+.top-navigation .logo {
+	height: 4.375rem;
+}
+
 .top-navigation .links li {
 	display: inline-block;
 	margin-left: 1.563rem;
 }
-.top-navigation .links > li.active {
+.top-navigation .links li.active {
 	color: #4c5058;
 	font-weight: 500;
 }
@@ -41,6 +62,10 @@ body {
 	cursor: pointer;
 	color: #333333;
 }
+
+/* Content styles 
+	(all the styles inside the < sections > or < aside > tags)
+*/
 .introduction {
 	background-image: url('../images/first-background.jpg');
 	background-position: center bottom;
@@ -122,6 +147,10 @@ body {
 	font-weight: 300;
 	font-size: 1.313rem;
 }
+
+/* Footer styles 
+	(all the styles inside the < footer > tag)
+*/
 .social {
 	background-color: #fff;
 	overflow: auto;
@@ -166,3 +195,7 @@ body {
 	font-weight: 400;
 	font-size: 1rem;
 }
+
+/* Responsive styles 
+	(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+*/
